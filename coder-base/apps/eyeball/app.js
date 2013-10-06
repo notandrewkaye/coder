@@ -1,4 +1,5 @@
 exports.settings={};
+
 //These are dynamically updated by the runtime
 //settings.appname - the app id (folder) where your app is installed
 //settings.viewpath - prefix to where your view html files are located
@@ -17,6 +18,7 @@ exports.post_routes = [
 
 
 exports.index_handler = function( req, res ) {
+    
     var tmplvars = {};
     tmplvars['static_url'] = exports.settings.staticurl;
     tmplvars['app_name'] = exports.settings.appname;
